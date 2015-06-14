@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="com.zipo.medicalcatalog"
+        version="1.0.0">
+  <name>ZIPO</name>
+
+  <description>
+    Zeiss India Medical Product offerings
+  </description>
+
+  <author href="http://zeiss.com/.com"
+          email="support@zeiss.com">
+    Zeiss India Pvt Ltd
+  </author>
+
+  <!-- Options -->
+  <preference name="orientation"
+              value="default" />
+  <preference name="fullscreen"
+              value="true" />
+  <preference name="phonegap-version"
+              value="3.7.0" />
+  <preference name="auto-hide-splash-screen"
+              value="true" />
+
+  <!-- iOS only -->
+  <!-- Handheld and Tablet -->
+  <preference name="target-device"
+              value="universal" />
+  <!-- Don't Bounce on stretch -->
+  <preference name="webviewbounce"
+              value="false" />
+  <!-- Show Startup Spinner -->
+  <preference name="show-splash-screen-spinner"
+              value="false" />
+  <!-- Don't Suspend -->
+  <preference name="exit-on-suspend"
+              value="false" />
+
+  <!-- Features (e.g. Permissions) -->
+  <feature name="http://api.phonegap.com/1.0/network" />
+  <feature name="http://api.phonegap.com/1.0/notification" />
+  <feature name="http://api.phonegap.com/1.0/geolocation" />
+  
+  <!-- Icons -->
+  <icon src="logo.png" />
+  <!-- must be named this -->
+
+
+  <!-- Android -->
+  <icon src="img/logo24.png"
+        gap:platform="android"
+        gap:density="ldpi" />
+
+  <icon src="img/logo32.png"
+        gap:platform="android"
+        gap:density="mdpi" />
+  <icon src="img/logo64.png"
+        gap:platform="android"
+        gap:density="hdpi" />
+  <icon src="img/logo64.png"
+        gap:platform="android"
+        gap:density="xhdpi" />
+
+<!-- WinPhone -->
+  <icon src="img/logo32.png"
+        gap:platform="winphone" />
+  <icon src="img/logo24.png"
+        gap:platform="winphone"
+        gap:role="background" />
+</widget>

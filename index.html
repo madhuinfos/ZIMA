@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" charset="utf-8" content="width=device-width, user-scalable=no" />
+    <title>App</title>
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="css/app.responsive.css" rel="stylesheet" />
+    <link href="bootstrap-3.3.4-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+    .ticket{display: none;}
+    .comments{display: none;}
+    </style>
+
+</head>
+<body>
+<section id="header">
+    <a href="about.html" class="header-button"><img src="img/information.png" alt="about" /></a>
+    <h1>Carl Zeiss Medical Products</h1>
+</section>
+<section id="index-page" class="body">
+    <!--<h1>Where do u wanna go?</h1>
+    <h2>Travel desitnations</h2>
+    <p>Plan your next adventure</p>
+
+    <ul id="destinations" >
+        <li class="vacations" data-price="400">
+            <h3>Kashmir vacations</h3>
+            <button>GetPrice</button>
+            <ul class="comments">
+                <li>Amazing Deal</li>
+                <li>Want to go</li>
+            </ul>
+            <ul class="ticket">
+                <p>ticket from to</p>
+                <p>ticket price</p>
+            </ul>
+        </li>
+
+        <li class="vacations" data-price="1000">
+            <h3>Andhra vacations</h3>
+            <button>GetPrice</button>
+            <ul class="comments">
+                <li>Amazing Deal</li>
+                <li>Want to go</li>
+            </ul>
+
+            <div class="vacationprice" data-price="400">
+                <h3>Kashmir vacation</h3>
+                <p>400Rs per ticket</p>
+                <p>
+                    Tickets:
+                    <input min="0" type="number" class="nooftickets" value="1"/>
+                </p>
+                <a href="#" id="commentslink" >showcomments </a>
+
+                <ul class="comments">
+                    <p>kashmir packages</p>
+                    <p>Start at attractive prices</p>
+                </ul>
+            </div>
+            <p>Total price: Rs <span id="total">400</span></p>
+        </li>
+        <!--<ul id="kashmir">-->
+            <!--<h3>Kashmir</h3>-->
+            <!--<li>Manali</li>-->
+            <!--<li>POK</li>-->
+        <!--</ul>-->
+        <!--<ul id="Andhra">-->
+            <!--<h3>Andhra</h3>-->
+            <!--<li>Vizag</li>-->
+            <!--<li>Amaravati</li>-->
+        <!--</ul>-->
+        <!--<ul>-->
+            <!--<p> - - - - - - - - - - - </p>-->
+        <!--<li class="zippo">Mussori</li>-->
+        </ul>
+    </ul>
+
+    <!--<button id="price">Check price</button>-->
+<!--<ol>
+    <li>
+        <img src="img/Eye.jpg" alt="Ophthalmology"/>
+        <label>Ophthalmology</label>
+    </li>
+
+    <li>
+        <img src="img/neurosurgery.jpg" alt="Neurosurgery"/>
+        <label>Neurosurgery</label>
+    </li>
+
+    <li>
+        <img src="img/pr_surgery.jpg" alt="P &amp; R surgery"/>
+        <input>
+        <label>P &amp; R Surgery</label>
+    </li>
+</ol> --> -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="img/neurosurgery.jpg" alt="neuro">
+                <div class="carousel-caption">
+                    <h3>Neuro surgery</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="img/pr_surgery.jpg" alt="pr">
+
+            </div>
+            <div class="item">
+                <img src="img/Eye.jpg" alt="eye">
+                <div class="carousel-caption">
+                    <h3>Eye</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>`
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+        <button type="button"  id="leftbutton" >Left</button>
+    </div> <!-- Carousel -->
+</section>
+
+
+<script src="js/vendor/jquery-2.0.0b2.min.js"></script>
+<script src="js/vendor/knockout-2.2.1.js"></script>
+<script src="js/vendor/sammy.0.7.4.min.js"></script>
+<script src="bootstrap-3.3.4-dist/js/bootstrap.min.js" ></script>
+<script src="js/vendor/jquery.min.js"></script>
+<script src="phonegap.js"></script>
+<script src="js/app.js"></script>
+<script src="js/app.js"></script>
+<script src="js/index.js"></script>
+<script src="js/settings.js"></script>
+<script src="js/router.js"></script>
+<script src="js/vendor/jquery.touchwipe.min.js"></script>
+<script>
+    $("#carousel-example-generic").touchwipe({
+        wipeLeft: function() {var type = $("#carousel-example-generic"); alert(type); $("#carousel-example-generic").carousel('next');  },
+        wipeRight: function() { $("#carousel-example-generic").carousel('prev');   },
+        min_move_x: 20,
+        preventDefaultEvents: true
+
+    });
+</script>
+
+</body>
+</html>
